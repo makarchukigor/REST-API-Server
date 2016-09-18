@@ -54,7 +54,7 @@ public class JpaConfig  {
         Properties jpaProperties = new Properties();
         jpaProperties.put(org.hibernate.cfg.Environment.DIALECT, dialect);
         jpaProperties.put(org.hibernate.cfg.Environment.HBM2DDL_AUTO, hbm2ddlAuto);        
-        jpaProperties.put(org.hibernate.cfg.Environment.SHOW_SQL, true);        
+        //jpaProperties.put(org.hibernate.cfg.Environment.SHOW_SQL, true);        
         entityManagerFactoryBean.setJpaProperties(jpaProperties);
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();

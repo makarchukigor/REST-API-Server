@@ -15,7 +15,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 public class LoginController { 
     
     
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public LoginResponse login() throws ServletException {    	
     	
         return new LoginResponse(Jwts.builder()           

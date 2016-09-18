@@ -30,8 +30,7 @@ public class MessageController  {
 			method = RequestMethod.POST,			
 			produces = MediaType.APPLICATION_JSON_UTF8_VALUE 
 			)	
-	public ResponseEntity<Message> newMessage(@RequestParam("text") String text /*@RequestBody Message message,*/) {		
-		System.out.println("post text = " + text);		
+	public ResponseEntity<Message> newMessage(@RequestParam("text") String text ) {					
 		Message result = messageService.create(text);
 		if (result == null) {
 			return new ResponseEntity<Message>(HttpStatus.INTERNAL_SERVER_ERROR);
