@@ -16,7 +16,7 @@ REST API
         GET    http://{Server name}:{Port}/login - for get tocken
         POST   http://{Server name}:{Port}/api/messages/new?text={message text} - for post new message (token must be in authorization section)
         GET    http://{Server name}:{Port}/api/messages/ - for get all public messages
-        DELETE http://{Server name}:{Port}/api/messages/del/{¹ message} - for delete message
-        PUT    http://{Server name}:{Port}/api/messages/close/{¹ message} - for close message
-        PUT    http://{Server name}:{Port}/api/messages/open/{¹ message} - for open message 
-        PUT    http://{Server name}:{Port}/api/messages/edit/{¹ message}?text={new message text}  for edid message     
+        DELETE http://{Server name}:{Port}/api/messages/del/{message number} - for delete message
+        PUT    http://{Server name}:{Port}/api/messages/close/{message number} - for close message
+        PUT    http://{Server name}:{Port}/api/messages/open/{message number} - for open message 
+        PUT    http://{Server name}:{Port}/api/messages/edit/{message number}?text={new message text}  for edid message     
